@@ -1,0 +1,45 @@
+#Task 1: Nested Loops
+table = [[5, 2, 6], [4, 6, 0], [9, 1, 8], [7, 3, 8]]
+
+#using the list above print each number one at a time
+for row in table:
+    for num in row:
+        print(num)
+
+#Task 2: Character Art
+triangle = [["*"], ["*", "*"], ["*", "*", "*"], ["*", "*", "*","*"],["*","*","*","*","*"]]
+
+#Using the table above to create a right triangle
+#the printed triangle will have brackets around it print
+for row in triangle:
+    print(row)
+
+#Task 3: Nested Loops 2
+#Sum of Rows
+#Write a program to display the sum of all the numbers
+
+table2 = [[5, 2, 6], [4, 6, 0], [9, 1, 8], [7, 3, 8]]
+
+for row in table2:
+    total = 0
+    for num in row:
+        total = total + num
+    print(total)
+
+#Task 4: Compound Conditional Expressions
+#Counting Characters
+#[1]Write a program to count the number of punctuation marks (. , ? ! ) in a user input
+userinput = input("Enter a pharagraph: ")
+count = 0
+for char in userinput:
+    if char in "." or char in "," or char in "?" or char in "!":
+        count = count + 1
+print("There are", count, "punctuation marks")
+
+#[2]Write a program to prompt the user for an odd positive number (help: x%2==1 and x>0; 
+#no loop needed, If user inputs a positive odd number print “Correct” if they didn’t print “Incorrect”
+userinput = int(input("Enter an odd positive number: "))
+if userinput%2==1 and userinput>0:
+    print("Correct")
+else:
+    print("Incorrect")
